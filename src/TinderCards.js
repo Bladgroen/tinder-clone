@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import TinderCard from "react-tinder-card";
 import "./TinderCards.css";
 import database from "./firebase";
@@ -28,10 +28,12 @@ function TinderCards() {
             preventSwipe={["up", "down"]}
           >
             <div
-              style={{ backgroundImage: `url(${person.url})` }}
+              style={{
+                backgroundImage: `https://buffer.com/library/content/images/size/w1200/2023/10/free-images.jpg`,
+              }}
               className="card"
             >
-              <h3>{person.name}</h3>
+              <h3>Vincent Laureys</h3>
             </div>
           </TinderCard>
         ))}

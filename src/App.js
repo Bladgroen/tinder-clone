@@ -23,7 +23,7 @@ function App() {
           <Route path="/">
             <Header />
             <TinderCards />
-            <SwipeButtons />
+            <SwipeButtons/>
           </Route>
         </Switch>
       </Router>
